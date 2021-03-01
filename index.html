@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Qalyn calculator</title>
+    <title>Title</title>
+    
+</head>
+
+<body>
+    <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
+        <div class="row">
+            <div class="col col-sm-12">
+                <h1 class="text-center">Qalyn calculator</h1>
+                <label for="fname">Groom name: </label>
+                <input type="text" id="name" ><br>
+                <label for="quantity">Starting bid: </label>
+                <input type="number" id="bid"><br>
+                <label for="education" class="education">Education level:</label><br>
+                <select id="education" class="p">
+                    <option value=1 class="p"></option>
+                    <option value=1.5 class="p">Bachelor's degree</option>
+                    <option value=1.2 class="p">College degree</option>
+                    <option value=1.05 class="p">High school degree</option>
+                    <option value=0.9 class="p">Middle school degree</option>
+                </select>
+                <hr>
+                <label for="capital" class="capital">Family networth:</label><br>
+                <select id="family" class="p">
+                    <option value=1></option>
+                    <option value=2 class="p">More than 100,000$</option>
+                    <option value=1.5 class="p">Between 50,000$ and 100,000$</option>
+                    <option value=1.2 class="p">Less than 50,000$</option>
+                </select>
+                <hr>
+                <label for="skills" class="skills">Skills:</label><br>
+                <input type="checkbox" class="skills" value=100>
+                <label for="skill0" class="skill">Playing on dombra</label><br>
+                <input type="checkbox" class="skills" value=200>
+                <label for="skill1" class="skill">Good cook</label><br>
+                <input type="checkbox" class="skills" value=150>
+                <label for="skill2" class="skill">Easygoing character</label><br>
+                <input type="checkbox" class="skills" value=100>
+                <label for="skill3" class="skill">Sings well</label>
+                <hr>
+                <label for="age" class="age">Age:</label><br>
+                <input type="radio" class="age" name="age" value=1.5>
+                <label for="age0" class="age">18 - 23</label><br>
+                <input type="radio" id="age1" name="age" value=1.2>
+                <label for="age1" class="age">24 - 27</label><br>
+                <input type="radio" id="age2" name="age" value=0.95>
+                <label for="age2" class="age">28+</label>
+                <hr>
+                <label for="Reputation" class="reputation">Reputation:</label><br>
+                <input type="checkbox" class="rep" name="reputation0" value=0.85>
+                <label for="reputation0" class="p">Gossips about parent's attitude</label><br>
+                <input type="checkbox" class="rep" name="reputation1" value=0.9>
+                <label for="reputation1" class="p">Gossips about his/her character</label><br>
+                <input type="checkbox" class="rep" name="reputation2" value=-200>
+                <label for="reputation2" class="p">General gossips around his/her person</label>
+                <hr>
+                <textarea id="letter" maxlength="500"></textarea><br>
+                <button id = "button" class="btn btn-outline-info">Calculate</button>
+                <p id="result"></p> 
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
